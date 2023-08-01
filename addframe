@@ -1,0 +1,6 @@
+#! /bin/bash
+inpath=`dirname "${1}"`
+fname=`basename "${1}"`
+outpath="${2}"
+docker run --rm --name addframe -v "${inpath}:/mnt/input" -v "${outpath}:/mnt/output" -it orzbruford/addframe "/mnt/input/${fname}" "/mnt/output/"
+
