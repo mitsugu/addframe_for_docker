@@ -7,8 +7,15 @@
 3. cd addframe_for_docker
 4. docker build . -t orzbruford/addframe
 
-## First Usage
+## Usage
 1. start Docker
 2. cd addframe_for_docker
 3. ./addframe souce_file_full_path output_directory_path
+
+## Uninstall
+1. docker image rm orzbruford/addframe
+2. remove addframe_for_docker directory
+
+## License
+MIT Licence
 
